@@ -1,0 +1,345 @@
+@import url(fonts.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family:  'permian';
+}
+
+.center {
+    text-align: center;
+    padding-top: 20px;
+}
+h1 {
+    font-family: 'berlin';
+    text-align: center;
+    font-size: 6vw;
+    padding: 30px 10px 30px;
+    background: url("../img/line.png") no-repeat center bottom;
+    background-size: 40%;
+    margin: 0 0 20px;
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 3.8vw;
+    font-family: 'berlin';
+    text-align: center;
+    font-weight: normal;
+}
+h2 .big {
+    display: block;
+    font-size: 4.2vw;
+    font-family: 'berlin';
+    font-weight: normal;
+}
+
+h3 {
+    color: #b7dee8;
+    font-size: 3vw;
+    font-family: 'berlin';
+    text-align: center;
+    font-weight: normal;
+}
+
+ul, ol {
+    list-style-position: inside;
+    margin-bottom: 10px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+body {
+    background: url("../img/back.jpg") no-repeat center center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+.wrap {
+    height: 100vh;
+    max-height: 100%;
+    width: 100%;
+    margin: 0;
+    display: flex;
+}
+
+.container {
+    background: url("../img/back-content.jpg") no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    overflow: auto;
+    margin: 0 10px;
+    max-height: 80%;
+    text-align: justify;
+}
+p {
+    margin-bottom: 10px;
+    text-indent: 20px;
+}
+.container p, .container ul, .container ol  {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.nav {
+    font-family: 'berlin';
+    text-align: center;
+
+}
+.nav a {
+    font-size: 2vw;
+    padding: 10px 20px;
+    font-family: 'berlin';
+}
+.nav img,.part-info img,  .img {
+    display: block;
+    border-radius: 50%;
+    position: relative;
+}
+
+/*
+.nav .img:before {
+    box-shadow: 0 0 8px 15px rgba(9,49,74 ,1) inset;
+    display: block;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    z-index: +1;
+}*/
+
+ .img:before {
+    box-shadow: 0 0 8px 10px rgb(9 49 74) inset, 0 0 8px 8px rgb(9 49 74);
+    display: block;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    z-index: +1;
+}
+.nav-main {
+    display: flex;
+}
+.nav-main a {
+    text-align: center;
+    width: 25%;
+}
+.nav-main img {
+    max-width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #09314a;
+}
+/*.nav-main .img {
+    margin: 0 5%;
+}*/
+
+.text-big {
+    display: block;
+    font-size: 3vw;
+    font-family: 'berlin';
+}
+.nav-back a {
+    font-size: 2vw;
+    color: #b7dee8;
+    padding: 10px 30px 0;
+}
+
+.part-info {
+    display: flex;
+}
+
+.part-info .img {
+    max-height: 300px;
+    margin: 10px 20px;
+    position: relative;
+}
+.part-info img {
+    max-height: 300px;
+}
+.scroll {
+    overflow: auto;
+    max-height: 300px;
+    text-align: justify;
+}
+
+.list > div {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+    border-bottom: 1px dashed #5d798c;
+}
+.list > div div:nth-child(2) {
+    text-align: right;
+}
+
+.fancybox-caption__body {
+    padding: 5px;
+    background: rgba(0,0,0,.6);
+    font-size: 1rem;
+}
+
+@media screen and (min-height: 700px) {
+    .container {
+        justify-content: space-around;
+    }
+}
+@media screen and (max-height: 720px) and (min-width: 700px) {
+    .part-info {
+        height: 55%;
+        margin-bottom: 1%;
+    }
+
+    .part-info .img, .part-info img {
+        height: 100%;
+        margin: 0 auto;
+    }
+     .car {
+        height: 40%;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .list div {
+        padding: 0 5px;
+    }
+    h1 {
+        font-size: 2.2rem;
+        padding: 10px 10px 20px;
+    }
+    h2 {
+        font-size: 1.8rem;
+    }
+    h2 .big {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size:1.5rem;
+    }
+    .nav-back a,.nav a {
+
+        font-size: 1.3rem;
+    }
+    .nav a {
+        padding: 10px 20px 0 0;
+    }
+    .nav-back a {
+        padding: 10px 20px;
+    }
+    .fancybox-caption {
+        padding: 5px 10px !important;
+    }
+    .nav-main {
+        flex-direction: column;
+    }
+    .nav-main a {
+        width: 80%;
+        display: block;
+        padding: 0;
+        margin: 0 auto 30px;
+    }
+    .img {
+        margin-bottom: 20px;
+    }
+    .text-big {
+        font-size: 1.5rem;
+    }
+    .part-info {
+        flex-direction: column;
+    }
+    .part-info div:first-child {
+        text-align: center;
+    }
+    .scroll {
+        max-height: inherit;
+    }
+    .nav-back {
+        display: flex;
+        flex-direction: column;
+    }
+    .part-info .img {
+        max-height: 300px;
+        width: 220px;
+        margin: 10px auto;
+        position: relative;
+    }
+}
+
+@media screen and (min-width: 2300px) {
+    h1 {
+        font-size: 10rem;
+    }
+    h2 {
+        font-size: 4rem;
+    }
+    h2 .big {
+        font-size: 4.8rem;
+    }
+    h3 {
+        font-size: 4rem;
+    }
+    .nav-back a,.nav a {
+        font-size: 2.8rem;
+    }
+    .text-big {
+        font-size: 4.5rem;
+    }
+}
+
+
+.car {
+    position: relative;
+}
+.car .owl-theme .custom-nav {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+}
+.car .owl-theme .custom-nav .owl-prev,
+.car .owl-theme .custom-nav .owl-next {
+    position: absolute;
+    height: 100px;
+    color: inherit;
+    background: none;
+    border: none;
+    z-index: 100;
+}
+
+.car .owl-theme .custom-nav .owl-prev img,
+.car .owl-theme .custom-nav .owl-next img {
+    font-size: 2.5rem;
+    color: #cecece;
+    height: 100%;
+}
+.fa-angle {
+    font-size: 2.5rem;
+    color: #cecece;
+}
+.car .owl-theme .custom-nav .owl-prev {
+    left: 0;
+}
+.car .owl-theme .custom-nav .owl-next {
+    right: 0;
+}

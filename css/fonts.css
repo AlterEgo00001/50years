@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'berlin';
+    src: url('fonts/berlin_poster-webfont.woff2.html') format('woff2'),
+         url('fonts/berlin_poster-webfont.woff') format('woff'),
+         url('fonts/berlin_poster-webfont.ttf') format('truetype'),
+         url('fonts/berlin_poster-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'permian';
+    src: url('fonts/permiansanstypeface-webfont.woff2.html') format('woff2'),
+         url('fonts/permiansanstypeface-webfont.woff') format('woff'),
+         url('fonts/permiansanstypeface-webfont.ttf') format('truetype'),
+         url('fonts/permiansanstypeface-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
