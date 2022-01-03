@@ -1,0 +1,374 @@
+@import url(fonts.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family:  'Garamond';
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+    padding-top: 20px;
+}
+h1 {
+    font-family: 'Garamond';
+    text-align: center;
+    font-size: 3vw;
+    padding: 30px 10px 30px;
+    /*background: url("../img/line.png") no-repeat center bottom;*/
+    background-size: 40%;
+    margin: 0 0 20px;
+    font-weight: bold;
+}
+
+h1::first-line {
+    font-family: 'Garamond';
+    text-align: center;
+    font-size: 6vw;
+    font-weight: bold;
+}
+
+
+
+h2 {
+    font-size: 3.8vw;
+    font-family: 'Garamond';
+    text-align: center;
+    font-weight: bold;
+}
+h2 .big {
+    display: block;
+    font-size: 4.2vw;
+    font-family: 'Garamond';
+    font-weight: bold;
+}
+
+h3 {
+    color: #b7dee8;
+    font-size: 3vw;
+    font-family: 'Garamond';
+    text-align: center;
+    font-weight: bold;
+}
+
+h6 {
+    font-family: 'Garamond';
+    text-align: center;
+    font-size: 6vw;
+    /*background: url("../img/line.png") no-repeat center bottom;*/
+    font-weight: bold;
+}
+
+ul, ol {
+    list-style-position: inside;
+    margin-bottom: 10px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+body {
+    background: url("../img/back.jpg") no-repeat center center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+.wrap {
+    height: 100vh;
+    max-height: 100%;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    overflow: hidden;
+}
+
+.container_main {
+    background: url("../img/back-content.jpg") no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content_main {
+    overflow: auto;
+    margin: 0 10px;
+    max-height: 80%;
+    text-align: justify;
+}
+p {
+    margin-bottom: 10px;
+    text-indent: 20px;
+}
+.container_main p, .container_main ul, .container_main ol  {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.nav {
+    font-family: 'Garamond';
+    text-align: center;
+    font-weight: bold;
+}
+.nav a {
+    font-size: 1.8vw;
+    padding: 10px 20px;
+    font-family: 'Garamond';
+    font-weight: bold;
+}
+.nav img,.part-info img,  .img {
+    display: block;
+    border-radius: 0%;
+    position: relative;
+}
+
+.nav-main {
+    display: flex;
+}
+.nav-main a {
+    text-align: center;
+    width: 25%;
+}
+
+.text-big {
+    display: block;
+    font-size: 3vw;
+    font-family: 'Garamond';
+}
+.nav-back a {
+    font-size: 2vw;
+    color: #b7dee8;
+    padding: 10px 30px 0;
+}
+
+.part-info {
+    display: flex;
+}
+
+.part-info .img {
+    max-height: 300px;
+    margin: 10px 20px;
+    position: relative;
+}
+.part-info img {
+    max-height: 300px;
+}
+.scroll {
+    overflow: auto;
+    max-height: 300px;
+    text-align: justify;
+}
+
+
+
+
+.testimonials {
+    background-color: #f33e0200;
+    position: relative;
+    padding-top: 80px;
+  }
+  .testimonials:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 30%;
+    background-color: rgba(221, 221, 221, 0);
+  }
+  
+  #customers-testimonials .item-details {
+    background-color: #333333;
+    color: #fff;
+    padding: 20px 10px;
+    text-align: left;
+  }
+  #customers-testimonials .item-details h5 {
+    margin: 0 0 15px;
+    font-size: 22px;
+    line-height: 18px;
+  }
+  #customers-testimonials .item-details h5 span {
+    color: red;
+    float: right;
+    padding-right: 20px;
+  }
+  #customers-testimonials .item-details p {
+    font-size: 14px;
+  }
+  #customers-testimonials .item {
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  
+  .owl-carousel .owl-nav [class*=owl-] {
+    transition: all 0.3s ease;
+  }
+  
+  .owl-carousel .owl-nav [class*=owl-].disabled:hover {
+    background-color: #D6D6D6;
+  }
+  
+  .owl-carousel {
+    position: relative;
+  }
+  
+  .owl-carousel .owl-next,
+  .owl-carousel .owl-prev {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 30%;
+    font-size: 90px;
+    color: #81c1fe;
+    /*border: 1px solid #ddd;*/
+    text-align: center;
+  }
+  
+  .owl-carousel .owl-prev {
+    left: -70px;
+  }
+  
+  .owl-carousel .owl-next {
+    right: -70px;
+  }
+
+
+  .fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+      font-size: 14px;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+.owl-item:hover,
+.owl-item:active,
+.owl-item:focus{
+    box-shadow: inset 0 0 55px #BFE2FF;
+    outline-color: rgba(255, 255, 255, 0);
+    outline-offset: 55px;
+    color: #FFF;
+}
+
+@media screen and (max-height: 720px) and (min-width: 700px) {
+    .part-info {
+        height: 55%;
+        margin-bottom: 1%;
+    }
+
+    .part-info .img, .part-info img {
+        height: 100%;
+        margin: 0 auto;
+    }
+     .car {
+        height: 40%;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .list div {
+        padding: 0 5px;
+    }
+    h1 {
+        font-size: 2.2rem;
+        padding: 10px 10px 20px;
+    }
+    h2 {
+        font-size: 1.8rem;
+    }
+    h2 .big {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size:1.5rem;
+    }
+    .nav-back a,.nav a {
+
+        font-size: 1.3rem;
+    }
+    .nav a {
+        padding: 10px 20px 0 0;
+    }
+    .nav-back a {
+        padding: 10px 20px;
+    }
+    .fancybox-caption {
+        padding: 5px 10px !important;
+    }
+    .nav-main {
+        flex-direction: column;
+    }
+    .nav-main a {
+        width: 80%;
+        display: block;
+        padding: 0;
+        margin: 0 auto 30px;
+    }
+    .img {
+        margin-bottom: 20px;
+    }
+    .text-big {
+        font-size: 1.5rem;
+    }
+    .part-info {
+        flex-direction: column;
+    }
+    .part-info div:first-child {
+        text-align: center;
+    }
+    .scroll {
+        max-height: inherit;
+    }
+    .nav-back {
+        display: flex;
+        flex-direction: column;
+    }
+    .part-info .img {
+        max-height: 300px;
+        width: 220px;
+        margin: 10px auto;
+        position: relative;
+    }
+}
+
+@media screen and (min-width: 2300px) {
+    h1 {
+        font-size: 10rem;
+    }
+    h2 {
+        font-size: 4rem;
+    }
+    h2 .big {
+        font-size: 4.8rem;
+    }
+    h3 {
+        font-size: 4rem;
+    }
+    .nav-back a,.nav a {
+        font-size: 2.8rem;
+    }
+    .text-big {
+        font-size: 4.5rem;
+    }
+}
