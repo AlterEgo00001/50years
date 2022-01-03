@@ -1,4 +1,4 @@
-$(function() {
+$(function () {
     $('[data-fancybox="gallery"]').fancybox({
         lang: "ru",
         i18n: {
@@ -16,7 +16,7 @@ $(function() {
                 ZOOM: "Масштаб"
             }
         },
-        caption: function(instance, item) {
+        caption: function (instance, item) {
             var id = item.src.substr(18, (item.src.indexOf('.j') - 18));
             var it = captionArr[id];
             var caption = $(this).data('caption') || (it ? ('№' + id + ' ' + it.title + (it.info ? '<br />' + it.info : '')) : '');
