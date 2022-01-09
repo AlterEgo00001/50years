@@ -45,8 +45,14 @@
  
  .owl-carousel .owl-item img {
      display: block;
-     width: 100%;
-     -webkit-transform-style: preserve-3d
+width: 100%;
+-webkit-transform-style: preserve-3d;
+height: 500px;
+object-fit: contain;
+max-height: 100%;
+max-width: 100%;
+display: block;
+margin: auto auto;
  }
  
  .owl-carousel .owl-dots.disabled,
